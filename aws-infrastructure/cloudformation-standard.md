@@ -136,7 +136,7 @@ Note:
 	When there is no old house (existing production stack), repairing an old house becomes building a house (creating a production stack).
 
 # Conclusion:
-	In general, there is a top level cloudformation template that creates the codepipeline that is then used to run the lower level template that deploys the built lambdas
+In general, there is a top level cloudformation template that creates the codepipeline that is then used to run the lower level template that deploys the built lambdas
 
 
 # Partition
