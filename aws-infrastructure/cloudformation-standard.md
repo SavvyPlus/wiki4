@@ -138,6 +138,6 @@ Note:
 # Conclusion:
 	In general, there is a top level cloudformation template that creates the codepipeline that is then used to run the lower level template that deploys the built lambdas
 
-Note:
+
 # Partition
 The partition lambda is for partitioning the data in Athena for downloaders that push their data to Athena.
