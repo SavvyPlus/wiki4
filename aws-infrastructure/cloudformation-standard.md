@@ -1,5 +1,5 @@
 <!-- TITLE: Cloudformation Standard -->
-<!-- SUBTITLE: A quick summary of Cloudformation Standard -->
+<!-- SUBTITLE: @Kevin and Dex -->
 
 # Introduction:
 This wiki page describes the standard model of CloudFormation for our cloud applications. It involves synchronizing GitHub repository to the CloudFormation, building lambdas, deploying lambdas and conducting different stages in CloudPipeline.
