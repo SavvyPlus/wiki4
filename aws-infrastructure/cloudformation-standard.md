@@ -3,5 +3,15 @@
 
 # Introduction
 # Structure
+
+<div id="content" class="view">
+
+
+
+<div id="main-content" class="wiki-content group">
+
 ###xxx.cfn.yaml 
 This is  the 
+
+</div>
+</div>
