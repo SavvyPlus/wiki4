@@ -18,15 +18,21 @@ The Data lake is combination of Highlevel and Deep Storage  (**Glacier** and **S
 
 ## Data Warehouse
 The Data Warehouse is where we ETL from the lake to the Warehouse to, in here multiple folders from different bucket are joined into one based on their required interaction, the idea is one bucket should have all necesary folders to eb able to be cross queries and also to create views and new tables based on more complex requirement and calcualtions. 
-**S3**
+**S3** Max 2 bucket containing all info 
 **ML and DL** Now we can actually cross reference different sources of data for complex models to be able to run more efficienclty, also here we implement PyWren models to create spot and other forecast options
+
+
+
+## Data Mart
+The data mart is the final "Ready" to be reported data , this is the result of the third and last ETL process created with Glue 
+**DRUID** the final data mart is ingested 
+**ML and DL** 
 **Athena**
 **Glue**
 **EC2**
 
 
-## Data Mart
-The
+
 **S3**
 **ML and DL** 
 **Athena**
