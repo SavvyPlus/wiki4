@@ -1,6 +1,8 @@
 <!-- TITLE: Savvy Loaders and Downloaders-->
 <!-- SUBTITLE: We use loader, downloader and sometimes scrappers to collect data and make it part of our resources to deliver sweet as visualisations  -->
 
+![Dl Sc Ld](/uploads/dl-sc-ld.png "Dl Sc Ld")
+
 # Loaders
 
 The loader or "hanlders" are norrow purpose lambda build that allows to recieve and process different data sources into DB and tables hosted in S3 and query by Athena, this is where we prepare the first source data to be anaylses and manipulated accordanly 
