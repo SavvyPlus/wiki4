@@ -94,4 +94,4 @@ Aggregating the half hourly data into a quarterly resolution, the distribution s
 
 Figure 3 below shows the distribution of the spot forecast aggregated into financial years. The median price in the first 3 financial years hover around $45/MWh, jumping to $70.10/MWh in FY-27 and increasing yearly to $104.89/MWh in FY-30 and then falling to $91.18/MWh in FY-33. 
 
-![Screen Shot 2018 05 22 At 10 35 07 Am](/uploads/matlab/screen-shot-2018-05-22-at-10-35-07-am.png "Screen Shot 2018 05 22 At 10 35 07 Am")
+![56](/uploads/56.png "56")
