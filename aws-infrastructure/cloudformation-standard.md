@@ -14,7 +14,7 @@ This wiki page describes the standard model of CloudFormation for our cloud appl
 	│   └── lambda.cfn.yaml
 	├── xxx
 	│   ├── buildspec.yaml
-	│   ├── data_downloader.py
+	│   ├── xxx.py
 	│   └── requirements.txt
 	├── xxx-clean-test-files
 	│   ├── buildspec.yaml
