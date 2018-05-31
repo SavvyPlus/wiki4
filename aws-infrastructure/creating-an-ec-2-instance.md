@@ -53,11 +53,13 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 
 ### 16.  Select **Launch**
 
-### 17.  Return to EC2 Instances 
+### 17. You will be required to select a Key Pair.
 
-### 18.  Locate your instance (it will be unamed).  Edit the name and follow the naming convention for naming instances.
+### 18.  Return to **EC2 Instances **
 
-### 19.  Now your instance is up and running
+### 19.  Locate your instance (it will be unamed).  Edit the name and follow the naming convention for naming instances.
+
+### 20.  Now your instance is up and running, 
 
 Keypair selection
 Connect to host
