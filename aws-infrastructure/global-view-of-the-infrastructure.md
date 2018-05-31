@@ -16,6 +16,7 @@ In AWS, they use they're own terminology which is useful to understand.
 * **VPC** - Virtual Private Cloud.  This is the whole network which subnets exist within.  Think of it like a big container or group of little networks.
 * **Subnets** - Subnets are well... Sub-networks.  These define where network objects sit (ie. servers etc).  They are either Private (which sit behind a NAT and don't have their own external IP address) or Public (have their dedicated public IP address).  When to use what? Well use Private unless it should be publically facing (such as a web server), otherwise put it in a Public subnet.
 * **Availability Zones** - these are like little datacentres, so for services which require high availablity, we duplicate them across more than one AZ for redundancy.  
+* **Security Groups** - these are groups of firewall ports which allow traffic in/out of subnets.  Think of them as our firewall.
 
 The diagram below shows all the components.
 
@@ -32,7 +33,7 @@ We use different AWS regions (locations) for different services though most are 
 * AWS4 - Oregon
 * AWS5 - Tokyo
 
-## VPCs we use
+## Our VPCs
 Across all sites we use standard naming for our VPCs.  These include (where awsx represents the region)...
 * awsX_vpc_mgmt - this is the Management VPC for the servers that look after authentication, app deployment, backups etc
 * awsX_vpc_prod - this is the Production VPC for the production services.  
