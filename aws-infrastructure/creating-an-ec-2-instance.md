@@ -1,7 +1,7 @@
 <!-- TITLE: Creating An EC2 Instance -->
 <!-- SUBTITLE: A quick summary of Creating An Ec 2 Instance -->
 
-# Creating an EC2 instance.  Which network settings do I choose?
+# Creating an EC2 instance.  Which settings do I choose?
 This is a quick tutorial on how to create an EC2 instance in AWS.  This illustrates the selecting the appropriate network settings for an instance.
 
 Now for this example we are going to create an Ubuntu t2.micro instance which is for a Development project which will be located in AWS Sydney (AWS2).
@@ -44,9 +44,15 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 ### 12.  For this example we want to choose the Security Group which aligns to the Subnet.
 ### Choose **aws2_sg_dev_priv** (this aligns with subnet aws2_sub_dev_priv_2a)
 
+![6](/uploads/6.png "6")
 
+### 13. Select **Review and Launch**  
 
-13.  
+### 14.  Select **Launch**
+
+### 15.  Return to EC2 Instances 
+
+16.  Locate your instance (it will be unamed).  Edit the name and follow the 
 
 
 
