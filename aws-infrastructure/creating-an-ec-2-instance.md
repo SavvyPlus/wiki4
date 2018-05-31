@@ -23,8 +23,8 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 ![3](/uploads/3.png "3")
 
 ### 6. On the next page we need to select the network config.  Here we are assuming this instance is for a Development project.  Therefore, select:
-#### VPC: aws2_vpc_dts (this is the dev/test/staging VPC)
-#### Subnet: aws2_sub_dev_priv_2a (this is the Development subnet, which is also Private (it will only be accessed internally) and is located in the 2a Availability Zone).
+#### **VPC: aws2_vpc_dts** (this is the dev/test/staging VPC)
+#### **Subnet: aws2_sub_dev_priv_2a** (this is the Development subnet, which is also Private (it will only be accessed internally) and is located in the 2a Availability Zone).
 
 ![4](/uploads/4.png "4")
 
