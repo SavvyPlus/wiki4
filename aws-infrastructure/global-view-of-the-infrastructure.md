@@ -17,6 +17,10 @@ In AWS, they use they're own terminology which is useful to understand.
 * **Subnets** - Subnets are well... Sub-networks.  These define where network objects sit (ie. servers etc).  They are either Private (which sit behind a NAT and don't have their own external IP address) or Public (have their dedicated public IP address).  When to use what? Well use Private unless it should be publically facing (such as a web server), otherwise put it in a Public subnet.
 * **Availability Zones** - these are like little datacentres, so for services which require high availablity, we duplicate them across more than one AZ for redundancy.  
 
+The diagram below shows all the components.
+
+![Internet Gateway Diagram](/uploads/internet-gateway-diagram.png "Internet Gateway Diagram")
+
 More here: https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html
 
 ## AWS Regions we use
