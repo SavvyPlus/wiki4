@@ -1,4 +1,4 @@
-![3](/uploads/3.png "3")<!-- TITLE: Creating An EC2 Instance -->
+<!-- TITLE: Creating An EC2 Instance -->
 <!-- SUBTITLE: A quick summary of Creating An Ec 2 Instance -->
 
 # Creating an EC2 instance.  Which network settings do I choose?
