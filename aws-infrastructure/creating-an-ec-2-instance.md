@@ -13,10 +13,13 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 
 3. Select **Launch Instance**
 
-4. Select **Ubuntu Server 16.04 LTS (HVM), SSD Volume Type**
+4. Select **Ubuntu Server 16.04 LTS (HVM), SSD Volume Type**'
+![2](/uploads/2.png "2")
+
+5. Select the instance type, here we choose **t2.micro** and select **Next: Configure Instance Details**
 
 
-5. 
+6. 
 
 
 
