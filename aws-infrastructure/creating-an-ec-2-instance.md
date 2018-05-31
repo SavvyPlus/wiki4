@@ -53,7 +53,7 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 
 ### 16.  Select **Launch**
 
-### 17. You will be required to select a Key Pair.
+### 17. You will be required to select a Key Pair. XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ### 18.  Return to **EC2 Instances **
 
