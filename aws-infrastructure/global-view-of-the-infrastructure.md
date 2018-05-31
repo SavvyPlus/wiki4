@@ -32,9 +32,25 @@ We use different AWS regions (locations) for different services though most are 
 * AWS4 - Oregon
 * AWS5 - Tokyo
 
-## 
+## VPCs we use
+Across all sites we use standard naming for our VPCs.  These include (where awsx represents the region)...
+* awsX_vpc_mgmt - this is the Management VPC for the servers that look after authentication, app deployment, backups etc
+* awsX_vpc_prod - this is the Production VPC for the production services.  
+* awsX_vpc_dts - this is the Development/Testing/Staging VPC.  For all our dev team, most of your work will sit in here.
+* awsX_vpc_vdi - this is the Virtual Desktop Infrastructure (known as AWS Workspace) for our virtual desktops.
 
-### Naming Conventions
+## Which Subnets for what?
+Each VPC is broken down into smaller sub-networks (aka subnets!).  As mentioned previously each subnet is either Private or Public.
+A quick reminder...
+* Private - used for most services, they sit behind a NAT and are only accessible internally.  This is the most secure option and where our services should sit by default.  If you're not sure, put it in here.
+* Public - used only for services which need a Public IP address.  Only for web servers really that need public access.  Don't put things in this subnet because you're not sure.
+
+Then for the Availability Zones (AZs).  Well for all Dev/Test/Staging just pick the lowest AZ (ie. 2a or 1a).  For Production and Management, @elpresi and @jamesdaley can assist with this setup (its app specific).
+
+## Choosing a Security Group
+
+
+## Naming Conventions
 
 So here we use a standard naming convention which helps understanding what goes where.  
 
