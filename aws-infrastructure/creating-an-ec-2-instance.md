@@ -39,20 +39,24 @@ Now for this example we are going to create an Ubuntu t2.micro instance which is
 ### 10. There is no need to add tags in this example, select **Next: Configure Security Group**
 
 ### 11.  We want to specify an existing Security Group.  Do not choose Create a new Security Group.  
-### Choose **Select an existing security group**
+### 12.  Choose **Select an existing security group**
 
-### 12.  For this example we want to choose the Security Group which aligns to the Subnet.
-### Choose **aws2_sg_dev_priv** (this aligns with subnet aws2_sub_dev_priv_2a)
+### 13.  For this example we want to choose the Security Group which aligns to the Subnet.
+### 14.  Choose **aws2_sg_dev_priv** (this aligns with subnet aws2_sub_dev_priv_2a)
 
 ![6](/uploads/6.png "6")
 
-### 13. Select **Review and Launch**  
+### 15. Select **Review and Launch**  
 
-### 14.  Select **Launch**
+### 16.  Select **Launch**
 
-### 15.  Return to EC2 Instances 
+### 17.  Return to EC2 Instances 
 
-16.  Locate your instance (it will be unamed).  Edit the name and follow the 
+### 18.  Locate your instance (it will be unamed).  Edit the name and follow the naming convention for naming instances.
 
+### 19.  Now your instance is up and running
 
+Keypair selection
+Connect to host
+Add to guacamole
 
