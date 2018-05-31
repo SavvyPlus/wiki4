@@ -47,12 +47,24 @@ A quick reminder...
 
 Then for the Availability Zones (AZs).  Well for all Dev/Test/Staging just pick the lowest AZ (ie. 2a or 1a).  For Production and Management, @elpresi and @jamesdaley can assist with this setup (its app specific).
 
-## Choosing a Security Group
+And finally, not every subnet has a public subnet btw.  Some just don't need them (for example Dev and Test should remain in-house so shouldn't need a Public subnet).
 
+## Security Groups
+Security groups have been setup so they correlate to subnets.  This ensures the basic connectivity will work.  
+
+For example, if you are using the subnet below... 
+aws2_sub_dev_priv_2a
+
+Then assign security group...
+aws2_sg_dev_priv
+
+On top of that we can assign what we call "app" security groups for specific services.  
+These are specific purposes to allow traffic into public IP addresses.  These are defined with logical names as per above, though if unsure, contact @jamesdaley.
+Note: These are only necessary for Public subnets.
 
 ## Naming Conventions
 
-So here we use a standard naming convention which helps understanding what goes where.  
+We use a standard naming convention which helps understanding what goes where.  
 
 It usually goes something like this, here's some examples.
 
