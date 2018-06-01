@@ -51,7 +51,9 @@ A quick reminder...
 And finally, not every subnet has a public subnet btw.  Some just don't need them (for example Dev and Test should remain in-house so shouldn't need a Public subnet).
 
 ## Security Groups
-Security groups have been setup so they correlate to subnets.  This ensures the basic connectivity will work.  
+Security groups are groups of ports which acts as our firewall.  When creating an EC2 instance or other object in AWS, you need to assign a security group.
+
+To make it simple, Security Groups have been setup so they correlate to subnets.  This ensures the basic connectivity will work.  
 
 For example, if you are using the subnet below... 
 aws2_sub_dev_priv_2a
