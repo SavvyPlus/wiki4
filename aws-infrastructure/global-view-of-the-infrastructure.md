@@ -35,7 +35,7 @@ We use different AWS regions (locations) for different services though most are 
 
 ## Our VPCs
 Across all sites we use standard naming for our VPCs.  These include (where awsx represents the region)...
-* **awsX_vpc_mgmt **- this is the Management VPC for the servers that look after authentication, app deployment, backups etc
+* **awsX_vpc_mgmt** - this is the Management VPC for the servers that look after authentication, app deployment, backups etc
 * **awsX_vpc_prod** - this is the Production VPC for the production services.  
 * **awsX_vpc_dts** - this is the Development/Testing/Staging VPC.  For all our dev team, most of your work will sit in here.
 * **awsX_vpc_vdi** - this is the Virtual Desktop Infrastructure (known as AWS Workspace) for our virtual desktops.
