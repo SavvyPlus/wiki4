@@ -27,11 +27,11 @@ More here: https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introducti
 ## AWS Regions we use
 We use different AWS regions (locations) for different services though most are hosted in AWS2.
 
-*** AWS1 - Ohio 
-* AWS2 - Sydney (most things live here)
-* AWS3 - Singapore
-* AWS4 - Oregon
-* AWS5 - Tokyo**
+* **AWS1 - Ohio** 
+* **AWS2 - Sydney** (most things live here)
+* **AWS3 - Singapore**
+* **AWS4 - Oregon**
+* **AWS5 - Tokyo**
 
 ## Our VPCs
 Across all sites we use standard naming for our VPCs.  These include (where awsx represents the region)...
