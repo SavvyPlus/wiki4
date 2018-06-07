@@ -29,3 +29,11 @@ Remove all sub-entries except for the Product key entry
 Add the Product key for Windows 10
 Also add the Product key to the Rules (task sequence)
 Save and exit
+
+# Writing the MDT boot image to a USB
+![Rufus](/uploads/rufus.png "Rufus")
+
+Then in the BIOS, got to Startup > select Legacy First
+Disable Secuirty > SecureBoot
+Boot and wait at the Lenovo screen, it takes approx 30 seconds before booting to the MDT image
+Thats it.
