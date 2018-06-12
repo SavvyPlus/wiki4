@@ -12,8 +12,8 @@ The structrue is simple , where each handler builds a S3 bucket and therefore ar
 The Data lake is combination of Highlevel and Deep Storage  (**Glacier** and **S3**), at this stage the systems and the analysis can use ML and DL , on a per bucket. 
 **ML and DL**will be used mostly in larger datasets, at a simple to raw stage. 
 **Athena** will be use to sandbox data and define the changes that need to happen for the data to be "Warehouse Ready".
-**Glue**
-**EC2**
+**Glue** Athena tables are Automatically uplpoded to Glue Catalogs 
+**EC2** instances can be used as tools and controls 
 
 
 ## Data Warehouse
