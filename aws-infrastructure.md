@@ -1,4 +1,4 @@
-<!-- TITLE: Aws Infrastructure -->
+<!-- TITLE: AWS Infrastructure -->
 <!-- SUBTITLE: We will lsit all the services and usage that we are using as well as the general review of what we are doing -->
 
 # AWS quick list (external links included) 
