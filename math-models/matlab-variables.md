@@ -1,4 +1,4 @@
-<!-- TITLE: Matlab Variables -->
+<!-- TITLE: Matlab Variables (Spot Price) -->
 <!-- SUBTITLE: A quick summary of Matlab Variables -->
 
 # Variables in MAT file
