@@ -24,3 +24,8 @@ Druid is made of multiple components:
 * Coordinator nodes are responsibel for telling the historical nodes which segments to fetch from deep storage and when to move segments across nodes
 
 A complete description of the druid architecture can be found here [http://static.druid.io/docs/druid.pdf]
+
+## Savvy Superset
+The superset kubernetes cluster configuration code is stored here [https://github.com/SavvyPlus/superset]
+
+This project contains the docker image `Dockerfile`s and the Kubernetes deployment/service and statefulset descriptors.
