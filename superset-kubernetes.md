@@ -29,3 +29,6 @@ A complete description of the druid architecture can be found here [http://stati
 The superset kubernetes cluster configuration code is stored here [https://github.com/SavvyPlus/superset]
 
 This project contains the docker image `Dockerfile`s and the Kubernetes deployment/service and statefulset descriptors.
+
+## Kops
+To make managing and maintaining the kubernetes cluster easier, we are using KOps [https://github.com/kubernetes/kops]. This allows us to create and modify the kubernetes cluster without having to manually create resources in AWS (EC2 instances etc)
