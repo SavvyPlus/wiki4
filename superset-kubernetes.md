@@ -48,3 +48,10 @@ Checkout the repo from [https://github.com/SavvyPlus/superset] and:
 `kops export kubecfg --name=${NAME}`
 1. From inside the superset-cluster-kops docker container, run the following to validate that the cluster is ready:
 `kops validate cluster`
+
+## Request SSL Certificate from AWS Certificate Manager
+To allow us to use secure connections to superset running on kubernetes, we need to get an SSL certificate.  The most efficient way of doing this when working with AWS is to use AWS Certificate Manager.
+
+1. Using the AWS web console, go to Certificate Manager and request a certificate for `*.superset.savvybi.enterprises`
+1. Use the DNS validation method.  
+1. When the certificate has been validated, copy the arn of the certificate to use in the nginx.yaml and superset.yaml deployment files
