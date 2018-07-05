@@ -31,4 +31,20 @@ The superset kubernetes cluster configuration code is stored here [https://githu
 This project contains the docker image `Dockerfile`s and the Kubernetes deployment/service and statefulset descriptors.
 
 ## Kops
-To make managing and maintaining the kubernetes cluster easier, we are using KOps [https://github.com/kubernetes/kops]. This allows us to create and modify the kubernetes cluster without having to manually create resources in AWS (EC2 instances etc)
+To make managing and maintaining the kubernetes cluster easier, we are using KOps [https://github.com/kubernetes/kops]. This allows us to create and modify the kubernetes cluster without having to manually create resources in AWS (EC2 instances etc).
+
+To make using kops easier, a docker container is available in the superset repository [https://github.com/SavvyPlus/superset/blob/master/k8s/Dockerfile] which uses kops to configure various aws resources and create a basic kubernetes cluster.
+
+## Creating a superset kubernetes cluster
+Checkout the repo from [https://github.com/SavvyPlus/superset] and:
+1. `cd superset/k8s`
+1. `./cluster.sh`
+1. `sudo docker run -it savvybi/superset-cluster-kops:0.1`
+1. From inside the superset-cluster-kops docker container, run the following to create the k8s spec
+`kops create cluster --node-size=t2.large --zones=ap-southeast-2a,ap-southeast-2b --node-count=4 --name=${NAME}`
+1. From inside the superset-cluster-kops docker container, run the following to use the spec to create the k8s cluster
+`kops update cluster ${NAME} --yes`
+1. From inside the superset-cluster-kops docker container, run the following to generate the kubectl config:
+`kops export kubecfg --name=${NAME}`
+1. From inside the superset-cluster-kops docker container, run the following to validate that the cluster is ready:
+`kops validate cluster`
