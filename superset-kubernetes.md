@@ -70,7 +70,7 @@ From the top level of the git repository:
 
 ## Deploying ExternalDNS for Kubernetes
 
-From the top level of the git repository
+From the top level of the git repository:
 
 * `sudo docker run -v $(pwd)/k8s:/files -it savvybi/superset-cluster-kops:0.1`
 * `kops export kubecfg --name=${NAME}`
