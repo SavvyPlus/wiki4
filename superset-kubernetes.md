@@ -35,7 +35,7 @@ The superset kubernetes cluster configuration code is stored here [https://githu
 
 This project contains the docker image `Dockerfile`s and the Kubernetes deployment/service and statefulset descriptors.
 
-## Kops
+## KOps
 To make managing and maintaining the kubernetes cluster easier, we are using KOps [https://github.com/kubernetes/kops]. This allows us to create and modify the kubernetes cluster without having to manually create resources in AWS (EC2 instances etc).
 
 To make using kops easier, a docker container is available in the superset repository [https://github.com/SavvyPlus/superset/blob/master/k8s/Dockerfile] which uses kops to configure various aws resources and create a basic kubernetes cluster.
