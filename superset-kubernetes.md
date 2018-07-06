@@ -135,7 +135,7 @@ If you have already created the k8s cluster, you will need to expand the cluster
 
 From the top level of the git repository:
 * `sudo docker run -v $(pwd)/druid:/files -it savvybi/superset-cluster-kops:0.1`
-* From inside the superset-cluster-kops docker container, run the following
+* From inside the superset-cluster-kops docker container, run the following:
 * `kops export kubecfg --name=${NAME}`
 * `kops edit ig nodes` and change to `maxSize: 3` and `minSize: 3`
 * Run the zookeeper deployment `kubectl apply -f /files/zookeeper.yaml`
