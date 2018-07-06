@@ -87,7 +87,6 @@ From the top level of the git repository:
 ## Deploying ExternalDNS for Kubernetes
 
 From the top level of the git repository:
-
 * `sudo docker run -v $(pwd)/k8s:/files -it savvybi/superset-cluster-kops:0.1`
 * `kops export kubecfg --name=${NAME}`
 * Edit the cluster config to add required iam policies: `kops edit cluster ${NAME}`
@@ -132,7 +131,6 @@ From the top level of the git repository:
 ## Deploying zookeeper
 
 If you have already created the k8s cluster, you will need to expand the cluster to at least 3 nodes.
-
 From the top level of the git repository:
 * `sudo docker run -v $(pwd)/druid:/files -it savvybi/superset-cluster-kops:0.1`
 * From inside the superset-cluster-kops docker container, run the following:
