@@ -55,3 +55,15 @@ To allow us to use secure connections to superset running on kubernetes, we need
 1. Using the AWS web console, go to Certificate Manager and request a certificate for `*.superset.savvybi.enterprises`
 1. Use the DNS validation method.  
 1. When the certificate has been validated, copy the arn of the certificate to use in the nginx.yaml and superset.yaml deployment files
+
+## Deploying Kubernetes Dashboard
+
+From the top level of the git repository
+1. `sudo docker run -it savvybi/superset-cluster-kops:0.1`
+1. `kops export kubecfg --name=${NAME}`
+1. From inside the superset-cluster-kops docker container, run the following to deploy the kubernetes dashboard:
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml`
+1. `kops get secrets kube --type secret -oplaintext`
+1. Copy the output from this and use it as the password for (username admin): https://api.superset.savvybi.enterprises/ui
+1. `kops get secrets admin --type secret -oplaintext`
+1. Copy the output from this and use it as the Token
