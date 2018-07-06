@@ -49,6 +49,8 @@ To make managing and maintaining the kubernetes cluster easier, we are using KOp
 
 To make using kops easier, a docker container is available in the superset repository [https://github.com/SavvyPlus/superset/blob/master/k8s/Dockerfile] which uses kops to configure various aws resources and create a basic kubernetes cluster.
 
+## Kubectl
+Although `kops` is used to manage the infrastructure that the cluster runs on (in our case AWS), `kubectl` is the tool that is used to interact with the cluster, to perform the deployments of applications and to inspect the state of the applications and cluster.
 ## Creating a superset kubernetes cluster
 Checkout the repo from [https://github.com/SavvyPlus/superset] and:
 * `cd superset/k8s`
