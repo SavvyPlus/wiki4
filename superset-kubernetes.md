@@ -19,6 +19,9 @@ At it's most basic level, Kubernetes runs applications packaged as docker contai
 #### Pods
 Kubernetes Pods are an application container (the developer's application), along with a secondary management container that allows the cluster to manage networking and control the application container.
 
+#### Services
+Kubernetes Services are a mechanism to expose Pods outside the cluster.
+
 ## Pre-requisites
 Superset itself doesn't require any pre-requisite software, we are using druid [http://druid.io/] as a distributed data store and druid does require further software.
 * Apache Zookeeper [https://zookeeper.apache.org/]
