@@ -37,45 +37,45 @@ To make using kops easier, a docker container is available in the superset repos
 
 ## Creating a superset kubernetes cluster
 Checkout the repo from [https://github.com/SavvyPlus/superset] and:
-1. `cd superset/k8s`
-1. `./cluster.sh`
-1. `sudo docker run -it savvybi/superset-cluster-kops:0.1`
-1. From inside the superset-cluster-kops docker container, run the following to create the k8s spec
+* `cd superset/k8s`
+* `./cluster.sh`
+* `sudo docker run -it savvybi/superset-cluster-kops:0.1`
+* From inside the superset-cluster-kops docker container, run the following to create the k8s spec
 `kops create cluster --node-size=t2.large --zones=ap-southeast-2a,ap-southeast-2b --node-count=4 --name=${NAME}`
-1. From inside the superset-cluster-kops docker container, run the following to use the spec to create the k8s cluster
+* From inside the superset-cluster-kops docker container, run the following to use the spec to create the k8s cluster
 `kops update cluster ${NAME} --yes`
-1. From inside the superset-cluster-kops docker container, run the following to generate the kubectl config:
+* From inside the superset-cluster-kops docker container, run the following to generate the kubectl config:
 `kops export kubecfg --name=${NAME}`
-1. From inside the superset-cluster-kops docker container, run the following to validate that the cluster is ready:
+* From inside the superset-cluster-kops docker container, run the following to validate that the cluster is ready:
 `kops validate cluster`
 
 ## Request SSL Certificate from AWS Certificate Manager
 To allow us to use secure connections to superset running on kubernetes, we need to get an SSL certificate.  The most efficient way of doing this when working with AWS is to use AWS Certificate Manager.
 
-1. Using the AWS web console, go to Certificate Manager and request a certificate for `*.superset.savvybi.enterprises`
-1. Use the DNS validation method.  
-1. When the certificate has been validated, copy the arn of the certificate to use in the nginx.yaml and superset.yaml deployment files
+* Using the AWS web console, go to Certificate Manager and request a certificate for `*.superset.savvybi.enterprises`
+* Use the DNS validation method.  
+* When the certificate has been validated, copy the arn of the certificate to use in the nginx.yaml and superset.yaml deployment files
 
 ## Deploying Kubernetes Dashboard
 
-From the top level of the git repository
-1. `sudo docker run -it savvybi/superset-cluster-kops:0.1`
-1. `kops export kubecfg --name=${NAME}`
-1. From inside the superset-cluster-kops docker container, run the following to deploy the kubernetes dashboard:
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml`
-1. `kops get secrets kube --type secret -oplaintext`
-1. Copy the output from this and use it as the password for (username admin): https://api.superset.savvybi.enterprises/ui
-1. `kops get secrets admin --type secret -oplaintext`
-1. Copy the output from this and use it as the Token
+From the top level of the git repository:
+* `sudo docker run -it savvybi/superset-cluster-kops:0.1`
+* `kops export kubecfg --name=${NAME}`
+* From inside the superset-cluster-kops docker container, run the following to deploy the kubernetes dashboard:
+* `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml`
+* `kops get secrets kube --type secret -oplaintext`
+* Copy the output from this and use it as the password for (username admin): https://api.superset.savvybi.enterprises/ui
+* `kops get secrets admin --type secret -oplaintext`
+* Copy the output from this and use it as the Token
 
 ## Deploying ExternalDNS for Kubernetes
 
 From the top level of the git repository
 
-`sudo docker run -v $(pwd)/k8s:/files -it savvybi/superset-cluster-kops:0.1`
-1. `kops export kubecfg --name=${NAME}`
-1. Edit the cluster config to add required iam policies: `kops edit cluster ${NAME}`
-1. Copy the following yaml and add to the end of the cluster config in vi
+* `sudo docker run -v $(pwd)/k8s:/files -it savvybi/superset-cluster-kops:0.1`
+* `kops export kubecfg --name=${NAME}`
+* Edit the cluster config to add required iam policies: `kops edit cluster ${NAME}`
+* Copy the following yaml and add to the end of the cluster config in vi
 ```  
   additionalPolicies:
     node: |
@@ -92,10 +92,10 @@ From the top level of the git repository
         }
       ]
 ```
-1. Run `kops update cluster ${NAME} --yes`
-1. Run `kops rolling-update cluster` to ensure that changes are applied
-1. From inside the superset-cluster-kops docker container, run the following to deploy the superset application:
+* Run `kops update cluster ${NAME} --yes`
+* Run `kops rolling-update cluster` to ensure that changes are applied
+* From inside the superset-cluster-kops docker container, run the following to deploy the superset application:
 `kubectl create -f /files/external-dns.yaml`
-1. From inside the superset-cluster-kops docker container, run the following to deploy a test nginx service:
+* From inside the superset-cluster-kops docker container, run the following to deploy a test nginx service:
 `kubectl create -f /files/nginx.yaml`
-1. Wait for 5-10 minutes and then check that ExternalDNS has correctly created a new DNS entry in Route53, by browsing: `http://nginx.superset.savvybi.enterprises`
+* Wait for 5-10 minutes and then check that ExternalDNS has correctly created a new DNS entry in Route53, by browsing: `http://nginx.superset.savvybi.enterprises`
