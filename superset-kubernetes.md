@@ -113,3 +113,16 @@ From the top level of the git repository:
 * From inside the superset-cluster-kops docker container, run the following to deploy a test nginx service:
 `kubectl create -f /files/nginx.yaml`
 * Wait for 5-10 minutes and then check that ExternalDNS has correctly created a new DNS entry in Route53, by browsing: `http://nginx.superset.savvybi.enterprises`
+
+## Deploying superset application
+
+From the top level of the git repository:
+* `sudo docker run -v $(pwd)/superset-app:/files -it savvybi/superset-cluster-kops:0.1`
+* From inside the superset-cluster-kops docker container, run the following to deploy the superset application:
+* `kubectl create -f /files/superset.yaml`
+* From inside the superset-cluster-kops docker container, run the following to get the external facing url:
+* `kubectl describe service superset`
+* you should see something like:
+* `LoadBalancer Ingress:     a9c4e359f6d9711e8b31c068d3110b28-2094159502.ap-southeast-2.elb.amazonaws.com`
+* browsing to that location will give the superset login page
+* Wait for 10 minutes for ExternalDNS to generate a nice url and then browse to `http://superset-app.superset.savvybi.enterprises` - login with admin/pa55word
