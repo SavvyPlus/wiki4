@@ -22,6 +22,9 @@ Kubernetes Pods are an application container (the developer's application), alon
 #### Services
 Kubernetes Services are a mechanism to expose Pods outside the cluster.
 
+#### Deployment
+A Kubernetes Deployment is the description of how many instances of the Pod should be started and how they should be distributed over the nodes in the cluster.
+
 ## Pre-requisites
 Superset itself doesn't require any pre-requisite software, we are using druid [http://druid.io/] as a distributed data store and druid does require further software.
 * Apache Zookeeper [https://zookeeper.apache.org/]
