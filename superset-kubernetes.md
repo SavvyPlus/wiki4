@@ -67,3 +67,41 @@ From the top level of the git repository
 1. Copy the output from this and use it as the password for (username admin): https://api.superset.savvybi.enterprises/ui
 1. `kops get secrets admin --type secret -oplaintext`
 1. Copy the output from this and use it as the Token
+
+## Deploying ExternalDNS for Kubernetes
+
+From the top level of the git repository
+
+`sudo docker run -v $(pwd)/k8s:/files -it savvybi/superset-cluster-kops:0.1`
+1. `kops export kubecfg --name=${NAME}`
+
+1. Edit the cluster config to add required iam policies: `kops edit cluster ${NAME}`
+1. Copy the following yaml and add to the end of the cluster config in vi
+
+```  
+  additionalPolicies:
+    node: |
+      [
+        {
+          "Effect": "Allow",
+          "Action": ["route53:ChangeResourceRecordSets"],
+          "Resource": ["arn:aws:route53:::hostedzone/*"]
+        },
+        {
+          "Effect": "Allow",
+          "Action": ["route53:ListHostedZones","route53:ListResourceRecordSets"],
+          "Resource": ["*"]
+        }
+      ]
+```
+1. Run `kops update cluster ${NAME} --yes`
+
+1. Run `kops rolling-update cluster` to ensure that changes are applied
+
+1. From inside the superset-cluster-kops docker container, run the following to deploy the superset application:
+`kubectl create -f /files/external-dns.yaml`
+
+1. From inside the superset-cluster-kops docker container, run the following to deploy a test nginx service:
+`kubectl create -f /files/nginx.yaml`
+
+1. Wait for 5-10 minutes and then check that ExternalDNS has correctly created a new DNS entry in Route53, by browsing: `http://nginx.superset.savvybi.enterprises`
