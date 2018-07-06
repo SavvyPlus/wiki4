@@ -11,6 +11,11 @@ We will deploy Superset on Kubernetes [https://kubernetes.io/] so that we can au
 ![K8s](/uploads/untitled-diagram.png "K8s") 
 Kubernetes is a container orchestration platform that will automatically move docker containers from a container host that is failing to a new host or can spin up a new instance of a container in a new host.
 
+To run Kubernetes on AWS we need to have some EC2 instances that will act as Kubernetes hosts.  These EC2 instances will all form part of the Kubernetes cluster and will run the various pods, services, deployments and statefulsets.
+
+### Kubernetes Concepts
+At it's most basic level, Kubernetes runs applications packaged as docker containers.  The key concept is that the application developer writes the application and defines the dependencies required, including memory, cpu and networking requirements.  These are packaged up as a docker container, then the deployment process involves creating a manifest yaml file which contains a reference to the newly created docker container along with instructions on how to access the container (networking ports etc) and how the container interacts with other containers.
+
 ## Pre-requisites
 Superset itself doesn't require any pre-requisite software, we are using druid [http://druid.io/] as a distributed data store and druid does require further software.
 * Apache Zookeeper [https://zookeeper.apache.org/]
