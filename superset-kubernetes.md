@@ -155,7 +155,7 @@ If you need to completely delete the cluster:
 From the top level of the git repository
 `sudo docker run -v $(pwd)/superset-app:/files -it savvybi/superset-cluster-kops:0.1`
 
-1. From inside the superset-cluster-kops docker container, run the following
-1. `kops export kubecfg --name=${NAME}`
-1. `kops delete cluster --name ${NAME} --yes`
+* From inside the superset-cluster-kops docker container, run the following
+* `kops export kubecfg --name=${NAME}`
+* `kops delete cluster --name ${NAME} --yes`
 
