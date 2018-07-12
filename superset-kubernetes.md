@@ -128,6 +128,16 @@ From the top level of the git repository:
 * browsing to that location will give the superset login page
 * Wait for 10 minutes for ExternalDNS to generate a nice url and then browse to `http://superset-app.superset.savvybi.enterprises` - login with admin/pa55word
 
+## Deploying postgres
+From the top level of the git repository
+`sudo docker run -v $(pwd)/superset-app:/files -it savvybi/superset-cluster-kops:0.1`
+
+* From inside the superset-cluster-kops docker container, run the following
+* `kops export kubecfg --name=${NAME}`
+* `kubectl create -f /files/postgres/postgresql`
+
+TODO test that other pods can connect to postgresql statefulset
+
 ## Deploying zookeeper
 
 If you have already created the k8s cluster, you will need to expand the cluster to at least 3 nodes.
@@ -137,3 +147,15 @@ From the top level of the git repository:
 * `kops export kubecfg --name=${NAME}`
 * `kops edit ig nodes` and change to `maxSize: 3` and `minSize: 3`
 * Run the zookeeper deployment `kubectl apply -f /files/zookeeper.yaml`
+
+## Destroying the Superset cluster
+***THIS IS A DESTRUCTIVE OPERATION AND YOU WILL REMOVE EVERYTHING***
+
+If you need to completely delete the cluster:
+From the top level of the git repository
+`sudo docker run -v $(pwd)/superset-app:/files -it savvybi/superset-cluster-kops:0.1`
+
+1. From inside the superset-cluster-kops docker container, run the following
+1. `kops export kubecfg --name=${NAME}`
+1. `kops delete cluster --name ${NAME} --yes`
+
