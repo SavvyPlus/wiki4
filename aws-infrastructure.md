@@ -21,8 +21,8 @@
 
 ## Our Infrastructure 
 * [Global View]http://wiki.savvy.work/aws-infrastructure/global-view-of-the-infrastructure
-* [Lambda]
-* [Glue]
+* [Lambda] https://www.youtube.com/watch?v=eOBq__h4OJ4
+* [Glue] https://www.youtube.com/watch?v=PbjDZh6EY9w&t=42s
 * [Athena] 
 * [CodePipeline & CodeBuild]
 * [CloudFormation]
