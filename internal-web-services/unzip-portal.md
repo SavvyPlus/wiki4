@@ -20,56 +20,68 @@ If only folder path or file extension is provided, the one is provided will be u
 
 
 
-    <h1>Wiki</h1>
-    <hr>
-    <h2>Unzip portal at a glance</h2>
-    <p>
-      Unzip portal (UP) is used to unzip large files which lambda cannot do. UP does not handle any transform part.
-    </p>
-    <hr>
-    <h2>Input fields</h2>
-    <hr>
-    <h5 class="font-weight-bold">Input Bucket (required)</h5>
-    <p>Name of S3 bucket that stores zip files need to be extracted.</p>
+ Wiki
+====
 
-    <h5 class="font-weight-bold">Input Bucket Folder (optional)</h5>
-    <p>If you want to unzip files inside one folder on S3 Bucket only, please enter the path to that folder in this field.</p>
-    <p>For example: "photos", "photos/", "/photos", "/photos/", "photos/2018", "photos/2018/", "/photos/2018", "/photos/2018/"  </p>
-    <p class="font-italic"><strong>Notes:</strong> "/" at beginning and ending are not important, you can ignore them or include them.</p>
+* * *
 
-    <h5 class="font-weight-bold">Output Bucket (required)</h5>
-    <p>Name of S3 bucket that stores files after extracted.</p>
+Unzip portal at a glance
+------------------------
 
-    <h5 class="font-weight-bold">Output Bucket Folder (optional)</h5>
-    <p>If you want to store extracted files in a folder on S3 output bucket, please enter the path of that folder.</p>
-    <p>For example: "photos", "photos/", "/photos", "/photos/", "photos/2018", "photos/2018/", "/photos/2018", "/photos/2018/"  </p>
-    <p class="font-italic"><strong>Notes:</strong> "/" at beginning and ending are not important, you can ignore them or include them.</p>
+Unzip portal (UP) is used to unzip large files which lambda cannot do. UP does not handle any transform part.
 
-    <h5 class="font-weight-bold">Path to target folder (optional)</h5>
-    <p>
-      One zip file may contain several different file types. You may only need to extract files in a particular folder.
-      If that the case, please enter the path to that folder in this field.
-    </p>
-    <p>For examples:</p>
-    <ul>
-      <li>file "abc.zip" has two folders "data" and "docs". You want to extract files in "data" folder, then enter <strong>"data"</strong></li>
-      <li>file "abc.zip" has two folders "data" and "docs", inside "data" folder there are "2012" and "2014" folders.
-        You want to extract files in "2014" folder only, then enter <strong>"data/2014"</strong></li>
-    </ul>
+* * *
 
-    <p>This field can be used together with "File extension" field or just only itself.</p>
+Input fields
+------------
 
-    <p class="font-italic"><strong>Notes:</strong> "/" at beginning and ending are not important, you can ignore them or include them.</p>
+* * *
 
-    <h5 class="font-weight-bold">File extension (optional)</h5>
-    <p>Extreact files that have a particular extension only such as ".csv", ".txt"</p>
-    <p>This field can be used together with "Path to target folder" field or just only itself.</p>
+##### Input Bucket (required)
 
-    <h5 class="font-weight-bold">Regular expression to match target files (optional)</h5>
-    <p>
-      If regular expression is provided, it will be used to match files inside zip file, "Path to target folder"
-      and "File extension" fields will be ignored.
-    </p>
-    <p>For example: ".+/DATA/.+\.zip" for all zip files in sub-folder name DATA</p>
+Name of S3 bucket that stores zip files need to be extracted.
 
-  </div>
+##### Input Bucket Folder (optional)
+
+If you want to unzip files inside one folder on S3 Bucket only, please enter the path to that folder in this field.
+
+For example: "photos", "photos/", "/photos", "/photos/", "photos/2018", "photos/2018/", "/photos/2018", "/photos/2018/"
+
+**Notes:** "/" at beginning and ending are not important, you can ignore them or include them.
+
+##### Output Bucket (required)
+
+Name of S3 bucket that stores files after extracted.
+
+##### Output Bucket Folder (optional)
+
+If you want to store extracted files in a folder on S3 output bucket, please enter the path of that folder.
+
+For example: "photos", "photos/", "/photos", "/photos/", "photos/2018", "photos/2018/", "/photos/2018", "/photos/2018/"
+
+**Notes:** "/" at beginning and ending are not important, you can ignore them or include them.
+
+##### Path to target folder (optional)
+
+One zip file may contain several different file types. You may only need to extract files in a particular folder. If that the case, please enter the path to that folder in this field.
+
+For examples:
+
+*   file "abc.zip" has two folders "data" and "docs". You want to extract files in "data" folder, then enter **"data"**
+*   file "abc.zip" has two folders "data" and "docs", inside "data" folder there are "2012" and "2014" folders. You want to extract files in "2014" folder only, then enter **"data/2014"**
+
+This field can be used together with "File extension" field or just only itself.
+
+**Notes:** "/" at beginning and ending are not important, you can ignore them or include them.
+
+##### File extension (optional)
+
+Extreact files that have a particular extension only such as ".csv", ".txt"
+
+This field can be used together with "Path to target folder" field or just only itself.
+
+##### Regular expression to match target files (optional)
+
+If regular expression is provided, it will be used to match files inside zip file, "Path to target folder" and "File extension" fields will be ignored.
+
+For example: ".+/DATA/.+\\.zip" for all zip files in sub-folder name DATA
