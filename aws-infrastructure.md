@@ -23,10 +23,10 @@
 * [Global View]http://wiki.savvy.work/aws-infrastructure/global-view-of-the-infrastructure
 * [Lambda] https://www.youtube.com/watch?v=eOBq__h4OJ4
 * [Glue] https://www.youtube.com/watch?v=PbjDZh6EY9w&t=42s
-* [Athena] 
-* [CodePipeline & CodeBuild]
-* [CloudFormation]
-* [Front end] 
+* [Athena] https://www.youtube.com/watch?v=-nnidKX_LMk
+* [CodePipeline & CodeBuild] https://www.youtube.com/watch?v=YxcIj_SLflw  https://www.youtube.com/watch?v=X8goIDjywiE
+* [CloudFormation] https://www.youtube.com/watch?v=b-gwhQ6GPFQ
 
 
-## Logic and Comments 
+
+
