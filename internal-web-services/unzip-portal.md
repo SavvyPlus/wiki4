@@ -19,7 +19,7 @@ If only folder path or file extension is provided, the one is provided will be u
 
 
 
-<div class="wiki">
+
     <h1>Wiki</h1>
     <hr>
     <h2>Unzip portal at a glance</h2>
