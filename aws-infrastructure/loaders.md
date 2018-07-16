@@ -1,7 +1,7 @@
 <!-- TITLE: Savvy Loaders and Downloaders-->
 <!-- SUBTITLE: We use loader, downloader and sometimes scrappers to collect data and make it part of our resources to deliver sweet as visualisations  -->
 
-![Dl Sc Ld](/uploads/dl-sc-ld.png "Dl Sc Ld")
+
 
 # Loaders
 
