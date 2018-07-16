@@ -2,7 +2,7 @@
 <!-- SUBTITLE: For large Unzip files to be deployed in S2 -->
 
 # Unzip 
-You can reach it either by directl IP http://10.61.201.129:8080/ or by going to http://unzip.savvy.work/
+You can reach it either by directl IP http://10.61.201.129:8080/ or by going to http://unzip.savvy.work:8080/
 
 
 **Input Bucket Folder examples**: "photos/", "photos", "photos/2018/" , "photos/2018" , "/photos" or "/photos/2018". ("photos" and "2018" are folder names not bucket names)
