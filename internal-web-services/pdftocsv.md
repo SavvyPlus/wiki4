@@ -10,7 +10,7 @@ Caveat: Tabula only works on text-based PDFs, not scanned documents. If you can 
 
 ## Where to find it ?
 
-http://10.61.201.160/  soon to be http://pdf2csv.zawee.work 
+http://pdf2csv.zawee.work 
 Inside the portal there is enougn documentation on how to use , and questions you may have , a little bit of playing around wil shortly show you the benefits and downfalls, we havent devleoped or particpated in the creation of this porject. 
 
 We wont be doing any fancy spancy stuff to it , so use it as is , is on a small server so if you feel lile uplading 200MB of pdf in one go , we can only wish best luck in your endeveours :-)
