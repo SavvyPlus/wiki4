@@ -67,6 +67,9 @@ As a supplement to the explaination in the above section Assumptions&Data Sourse
 * [MarketData].[dbo].[Public_Holidays]
 * [MarketData].[dbo].[AEMO_ROOFTOP_PV_ACTUAL]
 * [OperationalReporting]  - This is a database view integrated with many tables
+	* [OperationalReporting].[NEM].[PreDispatchPriceSensitivities]
+	* [OperationalReporting].[NEM].[SpotPriceDemand_30min]
+	* [OperationalReporting].[NEM].[GenerationByUnit_30min]
 
 ### Excel Spreadsheet Sources
 * Assumption Inputs - yyyy-mm-dd .xlsx   
