@@ -63,10 +63,10 @@ The annual electricity consumption for the different NEM states was sourced from
 As a supplement to the explaination in the above section Assumptions&Data Sourse, all the data sources are listed below.
 
 ### Database Sources
-[MarketData].[dbo].[BOM_Daily]
-[MarketData].[dbo].[Public_Holidays]
-[MarketData].[dbo].[AEMO_ROOFTOP_PV_ACTUAL]
-[OperationalReporting]
+* [MarketData].[dbo].[BOM_Daily]
+* [MarketData].[dbo].[Public_Holidays]
+* [MarketData].[dbo].[AEMO_ROOFTOP_PV_ACTUAL]
+* [OperationalReporting]
 
 ### Excel Spreadsheet Sources
 * Assumption Inputs - yyyy-mm-dd .xlsx   
