@@ -69,7 +69,13 @@ As a supplement to the explaination in the above section Assumptions&Data Sourse
 [OperationalReporting]
 
 ### Excel Spreadsheet Sources
-Assumption Inputs xxx .xlsx 
+* Assumption Inputs - yyyy-mm-dd .xlsx   
+This is the main assumption data sourse including new generation list, battery storage rates, PV forecast data, consumption growth, etc. This file would be updated frequently by Carl/Jay/Will to reflect the specific requirements in certain project.
+* Wind Summary.xlsx
+This is the historical wind generation data and some are derived from the power curve of given wind farms. This file will be used in the wind generation simulation.
+* Solar Generation.xlsx
+This is the historical (or estimated historical) solar generation data, which is derived from Bir's model, and this file will be used in the solar generation simulation.
+
 # Summary of Results
 
 This section provides a brief description of the spot price simulation results.
