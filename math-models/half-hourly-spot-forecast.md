@@ -60,7 +60,16 @@ The annual electricity consumption for the different NEM states was sourced from
 ![Screen Shot 2018 05 22 At 10 34 47 Am](/uploads/matlab/screen-shot-2018-05-22-at-10-34-47-am.png "Screen Shot 2018 05 22 At 10 34 47 Am")
 
 # Data Source List
+As a supplement to the explaination in the above section Assumptions&Data Sourse, all the data sources are listed below.
 
+### Database Sources
+[MarketData].[dbo].[BOM_Daily]
+[MarketData].[dbo].[Public_Holidays]
+[MarketData].[dbo].[AEMO_ROOFTOP_PV_ACTUAL]
+[OperationalReporting]
+
+### Excel Spreadsheet Sources
+Assumption Inputs xxx .xlsx 
 # Summary of Results
 
 This section provides a brief description of the spot price simulation results.
