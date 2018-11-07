@@ -76,6 +76,7 @@ This is the historical wind generation data and some are derived from the power 
 * Solar Generation.xlsx
 This is the historical (or estimated historical) solar generation data, which is derived from Bir's model, and this file will be used in the solar generation simulation.
 
+Note: file names may be different sometimes.
 # Summary of Results
 
 This section provides a brief description of the spot price simulation results.
