@@ -71,6 +71,8 @@ As a supplement to the explaination in the above section Assumptions&Data Sourse
 	* [OperationalReporting].[NEM].[SpotPriceDemand_30min]
 	* [OperationalReporting].[NEM].[GenerationByUnit_30min]
 
+Note: The OperationalReporting is actually a bunch of views pointing to ElecMMS + EnergyAccounting
+
 ### Excel Spreadsheet Sources
 * Assumption Inputs - yyyy-mm-dd .xlsx   
 This is the main assumption data sourse including new generation list, battery storage rates, PV forecast data, consumption growth, etc. This file would be updated frequently by Carl/Jay/Will to reflect the specific requirements in certain project.
