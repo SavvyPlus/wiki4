@@ -66,12 +66,12 @@ As a supplement to the explaination in the above section Assumptions&Data Sourse
 * [MarketData].[dbo].[BOM_Daily]
 * [MarketData].[dbo].[Public_Holidays]
 * [MarketData].[dbo].[AEMO_ROOFTOP_PV_ACTUAL]
-* [OperationalReporting]  - This is a database view integrated with many tables
+* [OperationalReporting]
 	* [OperationalReporting].[NEM].[PreDispatchPriceSensitivities]
 	* [OperationalReporting].[NEM].[SpotPriceDemand_30min]
 	* [OperationalReporting].[NEM].[GenerationByUnit_30min]
 
-Note: The OperationalReporting is actually a bunch of views pointing to ElecMMS + EnergyAccounting
+Note: The OperationalReporting is a bunch of views pointing to ElecMMS + EnergyAccounting
 
 ### Excel Spreadsheet Sources
 * Assumption Inputs - yyyy-mm-dd .xlsx   
