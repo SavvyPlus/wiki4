@@ -50,7 +50,7 @@ Email Attachement Downloader
 
 <td class="confluenceTd">
 
-MEL-SVR-AP-001
+AWS2-SVR-AP-009
 
 C:\Program Files (x86)\GearMage\Mail Attachment Downloader Pro v2.4
 
