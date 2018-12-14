@@ -22,7 +22,7 @@ The software is Mail Attachment Downloader PRO Server v2.4 by GearMage.
 
 Installation folder is "C:\Program Files (x86)\GearMage\Mail Attachment Downloader Pro v2.4"
 
-It runs as a service on MEL-SVR-AP-001.
+It runs as a service on AWS2-SVR-AP-009.
 
 ### Configuration
 
