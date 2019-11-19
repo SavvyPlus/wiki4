@@ -1,5 +1,10 @@
-<!-- TITLE: Admin Task -->
-<!-- SUBTITLE: A quick summary of Admin Task -->
+---
+title: Admin Task
+description: A quick summary of Admin Task
+published: true
+date: 2019-11-19T05:19:21.919Z
+tags: 
+---
 
 <!-- TITLE: Admin Task -->
 
@@ -30,29 +35,29 @@ Available Pages:
 
 *   [Admin Tasks Home]()
     
-    *   [Carl's Weekly Report](http://wiki.savvy.work/admin-task/weekly-report)
+    *   [Carl's Weekly Report](http://wiki.zawee.work/admin-task/weekly-report)
     
-    *   [CSR Emails](http://wiki.savvy.work/admin-task/csr-emails)
+    *   [CSR Emails](http://wiki.zawee.work/admin-task/csr-emails)
     
     *   [CSR PDF Invoices](https://savvyplus.atlassian.net/wiki/spaces/AT/pages/29884418/CSR+PDF+Invoices)
     
-    *   [Enhancement list](http://wiki.savvy.work/admin-task/enhancement-list)
+    *   [Enhancement list](http://wiki.zawee.work/admin-task/enhancement-list)
     
-    *   [ESCs and VEETs](http://wiki.savvy.work/admin-task/es-cs-vee-ts)
+    *   [ESCs and VEETs](http://wiki.zawee.work/admin-task/es-cs-vee-ts)
     
-    *   [Importing into Xero](http://wiki.savvy.work/admin-task/importing-into-xero)
+    *   [Importing into Xero](http://wiki.zawee.work/admin-task/importing-into-xero)
     
-    *   [LGC and STC Updates](http://wiki.savvy.work/admin-task/lgc-and-stc-updates)
+    *   [LGC and STC Updates](http://wiki.zawee.work/admin-task/lgc-and-stc-updates)
     
-    *   [Mark to Market](http://wiki.savvy.work/admin-task/mark-to-market)
+    *   [Mark to Market](http://wiki.zawee.work/admin-task/mark-to-market)
     
-    *   [Network Tariff Reviews](http://wiki.savvy.work/admin-task/network-tariff-reviews)
+    *   [Network Tariff Reviews](http://wiki.zawee.work/admin-task/network-tariff-reviews)
     
-    *   [Office Swipes](http://wiki.savvy.work/admin-task/office-swipes)
+    *   [Office Swipes](http://wiki.zawee.work/admin-task/office-swipes)
     
-    *   [PowerBI Reports](http://wiki.savvy.work/admin-task/power-bi-reports)
+    *   [PowerBI Reports](http://wiki.zawee.work/admin-task/power-bi-reports)
     
-    *   [Tas Hydro](http://wiki.savvy.work/admin-task/tas-hydro)
+    *   [Tas Hydro](http://wiki.zawee.work/admin-task/tas-hydro)
     
-    *   [Weather - BOM Images](http://wiki.savvy.work/admin-task/weather-bom-images)
+    *   [Weather - BOM Images](http://wiki.zawee.work/admin-task/weather-bom-images)
 
