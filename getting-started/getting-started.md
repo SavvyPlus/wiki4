@@ -2,7 +2,7 @@
 title: Getting Started
 description: A quick summary of how to get going in this complicated world
 published: true
-date: 2019-11-20T04:32:03.796Z
+date: 2019-11-20T04:39:23.176Z
 tags: 
 ---
 
@@ -49,15 +49,24 @@ A.
 **Q. How do I connect to the VPN?**
 A. Here at Zawee, we have provisioned a VPN server (Pritunl – www.pritunl.com) which is configured to allow our development team to connect to our network.
 
-1.	Download the Pritunl VPN client:
-							Windows: https://client.pritunl.com/#install
-							Mac:  https://client.pritunl.com/#install
-							Other: https://client.pritunl.com/#install
-2.	Follow the prompts to install the VPN client
-3.  Open Pritunl, and select ‘Import Profile’.  Import the .TAR profile sent to you.
-4.  Once imported, select the connection and click 'Connect'
-5.  Enter your Windows password when prompted
-6.  You are now connected to the network
+-	Download the Pritunl VPN client:
+> Windows: https://client.pritunl.com/#install
+> Mac:  https://client.pritunl.com/#install
+-	Follow the prompts to install the VPN client
+-  Open Pritunl, and select ‘Import Profile’.  Import the .TAR profile sent to you.
+-  Once imported, select the connection and click 'Connect'
+-  Enter your Windows password when prompted
+-  You are now connected to the network
+
+**Q. Where do I go if I'm looking for payroll help?**
+A. @jarrod will help you out, contact him on #slack
+
+**Q. Who do I contact if I can't access something (network, permission etc) ?**
+A. @james on #slack
+
+**Q. I need something for my computer, who should I ask?**
+A. @james or help yourself to the cables in the corner, there are loads.  If you can't find what you need, just ask @james who can get you one.
+
 
 
 
