@@ -2,7 +2,7 @@
 title: Getting Started
 description: A quick summary of how to get going in this complicated world
 published: true
-date: 2019-11-20T04:39:23.176Z
+date: 2019-11-20T04:41:26.138Z
 tags: 
 ---
 
@@ -67,7 +67,8 @@ A. @james on #slack
 **Q. I need something for my computer, who should I ask?**
 A. @james or help yourself to the cables in the corner, there are loads.  If you can't find what you need, just ask @james who can get you one.
 
-
+**Q. What are the usual working hours?**
+A. Generall the usual 9-5 but chat with your team leader to discuss.  Many of us work remotely, some part time and others odd hours so we are more interested in getting the work done than watching the clock.
 
 
 
