@@ -2,11 +2,11 @@
 title: home
 description: 
 published: true
-date: 2019-11-19T04:41:40.839Z
+date: 2019-11-20T04:10:42.212Z
 tags: 
 ---
 
-# Welcome to the Savvy Wiki 
+# Welcome to the Zawee Wiki 
 In here we will store and update all our procedures, guides and documentation and all the fun things we are working on... 
 
 
@@ -23,9 +23,9 @@ A brief overview of our infrastructure
 http://wiki.zawee.work/aws-infrastructure/global-view-of-the-infrastructure
 
 ## Shortcuts
-AWS Console - https://aws.zawee.work/
+AWS Console - https://aws.zawee.work
 Asana - https://asana.com
-Slack - https://savvyplusops.slack.com
+Slack - https://zawee.slack.com
 Passwords - https://passwords.zawee.work 
 
 
