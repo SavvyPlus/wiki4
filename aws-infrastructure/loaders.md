@@ -1,8 +1,8 @@
 ---
-title: Savvy Loaders and Downloaders
-description: We use loader, downloader and sometimes scrappers to collect data and make it part of our resources to deliver sweet as visualisations 
+title: New Loaders
+description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-17T03:10:17.730Z
+date: 2019-12-17T03:38:25.671Z
 tags: 
 ---
 
@@ -13,8 +13,7 @@ The loader or "hanlders" are norrow purpose lambda build that allows to recieve 
 ## ETL 
 Our loaders are store in github and each one of the has an explanation and README file to expalin theri structure and function, they difference from other as they all in the format **etl**-handler-name 
 
-### Folders 
-In our Buckets each forlder reperesents a table , which is what we query using Athena. We recently moved from bucket processing to folder processing each output folder is then move to the warehouse using other services such as Glue and Lambda
+
 
 # Downloaders
 Downloader are what we use to bring the data to S3 from different sources , each downloader naming should be as follow **dl**-name-desc. 
