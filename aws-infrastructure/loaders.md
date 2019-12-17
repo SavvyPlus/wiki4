@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-17T04:07:32.054Z
+date: 2019-12-17T04:08:09.462Z
 tags: 
 ---
 
@@ -14,38 +14,6 @@ Github link: https://github.com/SavvyPlus/market-data-downloader-cf/tree/dex_cfn
 
 
 ## MarketDispatch
-1
-2
-3
-4
-5
-123
-
-123
-
-123
-
-123
-213
-12
-321
-312
-3213
-123
-12
-312
-3
-123
-12
-3
-213
-21
-3
-123
-21
-
-
-
 
 
 
