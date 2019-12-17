@@ -1,7 +1,10 @@
-<!-- TITLE: Savvy Loaders and Downloaders-->
-<!-- SUBTITLE: We use loader, downloader and sometimes scrappers to collect data and make it part of our resources to deliver sweet as visualisations  -->
-
-
+---
+title: Savvy Loaders and Downloaders
+description: We use loader, downloader and sometimes scrappers to collect data and make it part of our resources to deliver sweet as visualisations 
+published: true
+date: 2019-12-17T03:05:31.853Z
+tags: 
+---
 
 # Loaders
 
