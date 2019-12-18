@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-18T04:19:00.554Z
+date: 2019-12-18T04:19:28.083Z
 tags: 
 ---
 
@@ -11,15 +11,11 @@ This application is built to download or scrape files related to the energy mark
 ## MarketData Downloader
 Github link: https://github.com/SavvyPlus/market-data-downloader-cf/tree/dex_cfn_empower
 
-
-
 ## MarketDispatch
 Github link: https://github.com/SavvyPlus/downloader2handler-cf/tree/dex_cfn_empower2savvyplus
 
-
 ## Savvyloader
 The Savvyloader consists of four separate loaders: ASX loader, Tashydro loader, Mecari loader and csv loader.
-
 
 
 # Invoice Loader
