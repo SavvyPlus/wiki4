@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-18T04:19:28.083Z
+date: 2019-12-18T04:22:14.145Z
 tags: 
 ---
 
@@ -10,7 +10,8 @@ tags:
 This application is built to download or scrape files related to the energy market from the Internet. Then, this tool processes the files and ingests the market data into the Sql Server.
 ## MarketData Downloader
 Github link: https://github.com/SavvyPlus/market-data-downloader-cf/tree/dex_cfn_empower
-
+It is deployed in the Empower AWS account.
+The MarketData Downloader reads its job in 
 ## MarketDispatch
 Github link: https://github.com/SavvyPlus/downloader2handler-cf/tree/dex_cfn_empower2savvyplus
 
