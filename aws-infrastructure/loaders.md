@@ -2,12 +2,15 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-18T05:37:34.776Z
+date: 2019-12-27T09:45:27.547Z
 tags: 
 ---
 
 # MarketData Downloader and SavvyLoaders
-This application is built to download or scrape files related to the energy market from the Internet. Then, this tool processes the files and ingests the market data into the Sql Server.
+This application is built to download or scrape files related to the energy market from the Internet. Then, this tool processes the files and ingests the market data into the Sql Server. 
+Asana Link: https://app.asana.com/0/751809352411794/1133019331538058
+Mantenance Log: https://app.asana.com/0/751809352411794/1144804739969025
+Project report: https://docs.google.com/document/d/1zIvWzR5XZP5LdMYcC5nhi1MFoaRZSpBNbitE00CXVAA/edit#
 ## MarketData Downloader
 Github link: https://github.com/SavvyPlus/market-data-downloader-cf/tree/dex_cfn_empower
 The stack of MarketData Downloader is deployed on the Empower AWS account.
@@ -15,7 +18,7 @@ The MarketData Downloader reads its job in a dynamodb **prod-marketdata_download
 ## MarketData Dispatcher
 Github link: https://github.com/SavvyPlus/downloader2handler-cf/tree/dex_cfn_empower2savvyplus
 The stack of MarketData Downloader is deployed on the Empower AWS account.
-The dispatcher automatically copies the data from **marketdata-downloader-prod** to proper s3 bucket in Empower account. It reads the mapping form a dynamodb table **table-test-downloader-handler-empower**
+The dispatcher automatically copies the data from **marketdata-downloader-prod** to proper s3 bucket in Empower account. It reads the mapping form a dynamodb table **table-test-downloader-handler-empower** in Empower AWS Account
 
 
 ## Savvyloader
