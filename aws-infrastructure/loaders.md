@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-27T09:45:27.547Z
+date: 2019-12-27T09:58:14.053Z
 tags: 
 ---
 
@@ -14,7 +14,7 @@ Project report: https://docs.google.com/document/d/1zIvWzR5XZP5LdMYcC5nhi1MFoaRZ
 ## MarketData Downloader
 Github link: https://github.com/SavvyPlus/market-data-downloader-cf/tree/dex_cfn_empower
 The stack of MarketData Downloader is deployed on the Empower AWS account.
-The MarketData Downloader reads its job in a dynamodb **prod-marketdata_downloader_source.empower** . The files are downloaded to the s3 bucket **marketdata-downloader-prod**
+The MarketData Downloader reads its job in a dynamodb **prod-marketdata_downloader_source.empower**. The files are downloaded to the s3 bucket **marketdata-downloader-prod**
 ## MarketData Dispatcher
 Github link: https://github.com/SavvyPlus/downloader2handler-cf/tree/dex_cfn_empower2savvyplus
 The stack of MarketData Downloader is deployed on the Empower AWS account.
@@ -22,7 +22,7 @@ The dispatcher automatically copies the data from **marketdata-downloader-prod**
 
 
 ## Savvyloader
-The Savvyloader consists of four separate loaders: ASX loader, Tashydro loader, Mecari loader and CSV loader.
+The Savvyloader consists of four separate loaders: [ASX loader](https://github.com/SavvyPlus/etl-asx/tree/dex_cfn_savvyplus), [Tashydro loader](https://github.com/SavvyPlus/etl-tas-hydro/tree/dex_cfn_savvyplus), [Mecari loader](https://github.com/SavvyPlus/etl-mercari/tree/dex_cfn_savvyplus) and [CSV loader](https://github.com/SavvyPlus/etl-generic-csv).
 
 
 # Invoice Loader
