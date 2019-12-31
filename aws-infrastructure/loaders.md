@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-27T10:06:53.332Z
+date: 2019-12-31T00:07:15.316Z
 tags: 
 ---
 
@@ -30,7 +30,7 @@ Github link: https://github.com/SavvyPlus/etl-invoice-loader/tree/dex_cfn_savvyp
 The invoice loader querys the InvoiceLoader.dbo.InvoiceLoaderJobs first to get the job defination. And it has a threshold `MAX_CHUNK_LENGTH`, if the `RAW_EDI_MAX_LENGTH` is bigger than 6000 lines(changeable), it will split the inovice into separate invoices files.
 ## Upload Instruction
 1. Prepare the invoice csv files
-2. Log in to the AWS account(SavvyPlus).  Open the s3 bucket **invoice-loader-prod-invoice-loader-savvyplus** and then open the  in folder
+2. Log in to the AWS account(SavvyPlus).  Open the s3 bucket **invoice-loader-prod-invoice-loader-savvyplus** and then open the  **in** folder
 3. Inside the in folder,  upload invoice files to appropriate folder with proper EDI_format and organisation_identifier(create it if necessary)
 4. Wait for a few seconds, if successful, the files will be moved to the done folder in the bucket; if not, the files will be moved to the error folder, in this case, please contact Dex or Anh.
 
