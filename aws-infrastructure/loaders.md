@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2020-01-08T01:57:03.176Z
+date: 2020-01-08T02:33:52.571Z
 tags: 
 ---
 
