@@ -2,7 +2,7 @@
 title: New Loaders
 description: New Loaders are serverles  applications deployed on AWS cloud for the purpose of processing source files and ingesting the data into Sql Server
 published: true
-date: 2019-12-31T00:07:15.316Z
+date: 2020-01-08T01:57:03.176Z
 tags: 
 ---
 
@@ -36,6 +36,34 @@ The invoice loader querys the InvoiceLoader.dbo.InvoiceLoaderJobs first to get t
 
 
 # Meter Loader
+
+# NEMDE Loader
+Github link: https://github.com/SavvyPlus/nemde-loader
+The Nemde Loader is a script that needs to run on a machine. 
+
+## Purpose
+To better understand how the 5min spot price (wholesale cost of energy) is derived we want see which generators were responsible for setting the price. Accessing the PriceSetter files published from AEMO will help us determine this.
+## Background 
+AEMO currently publishes the NEMDE files (Price Setter & SPD Outputs) after the month has ended, with the data itself broken into 288 files per day (5min resolution). However, as part of our new subscription with AEMO we will be aiming to receive the data overnight going forward. The monthly files we current have downloaded are zipped and includes zipped daily files with 288x5min files inside (i.e. Whole File Zip -> Daily Zips -> 5min files). The files themselves are XML with an example attached.
+
+## Instruction
+1. Uplaod original files to s3 bucket aemo.nemde. Don't need this step if the files are up there already.
+2. Put the name of the targeted zipped file into filename.txt (text files must end with a newline)
+3. Run the run.sh as sh run.sh filename.txt
+## Note
+If the data needs to be partitioned by minutes:
+
+The date/time of the file and naming conventions are a little misleading so please note the following. Within each daily zip there is a file for every 5min period of that day (i.e. 288 files). Each of these files has the following naming convention:
+
+NEMPriceSetter_YYYYMMDDXXX00.xml where XXX is the 5min period number (001 = first 5min period...288 = last 5min period)
+
+However, a day is not 00:00 to 24:00 but rather 04:05 to 04:05. Therefore, the first 5min period (001) actually refers to the period 04:00-04:05. As a result, whilst the filename states the data is for one date the data can actually span to the following day for certain 5min periods (e.g. 5min ID 240 onwwards actually has data for the following day). The attached image shows which 5min periods will have data for the day and which refer to the same day.
+
+-> Simple Example (14th 5min period): - NEMPriceSetter_2018010101400 -> 01-Jan-2018 05:10 (i.e. 05:05-05:10)
+
+-> Advanced Example (272nd 5min period): - NEMPriceSetter_2018010127200 -> 02-Jan-2018 02:40 (i.e. 02:35-02:40)
+
+Why this is relevant? Partitioning the data will be done on the filename but the actual reporting of the data will be done on the partition strcuture AND the actual data/time field within the XML file itself. We will need the flexibility to report on the Year, Month, Day, Hour, Minute of the actual data as well as the partitioned filename structure.
 
 
 
