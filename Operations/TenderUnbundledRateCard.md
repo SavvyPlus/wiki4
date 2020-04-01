@@ -2,7 +2,7 @@
 title: Tender Unbundled Rate Card Template
 description: Rate card template to convert the offers to Service Agreement
 published: true
-date: 2020-04-01T05:30:53.475Z
+date: 2020-04-01T05:31:53.902Z
 tags: 
 ---
 
@@ -11,7 +11,7 @@ The retailers will be provided with the standard rate card template during the t
 The following are the steps to use the template
 
 - Template location 
-	**G:\Shared drives\SavvyPlus\Energy Accounting Operations\Automated Operational Script\Unbundled Rate Card Conversion **Template\Template
+	**G:\Shared drives\SavvyPlus\Energy Accounting Operations\Automated Operational Script\Unbundled Rate Card Conversion Template\Template**
 - Copy the "**Unbundled Rate Card Conversion Template.v.1.xlsm**", "**Elec Service Agreement.xlsm**", "**Gas Service Agreement.xlsm**" to your Project folder
 - Open the template files on your Project folder
 - Copy the retailer's offer to "**Elec -unbundled**", "**Elec - Enviro....**", "**Gas - Unbundled**", "**Gas - Veet**"
