@@ -2,7 +2,7 @@
 title: Tender Unbundled Rate Card Template
 description: Rate card template to convert the offers to Service Agreement
 published: true
-date: 2020-04-01T05:31:53.902Z
+date: 2020-04-01T05:32:23.366Z
 tags: 
 ---
 
@@ -19,4 +19,4 @@ The following are the steps to use the template
 - Click on the "**Click to Refresh @@@**" button. The table should refresh with updated data. Otherwise try clicking the button again, if this happen, let me know so that I can fix it
 - If the data is fine, open (if not yet) the Service Agreement template (Elec or Gas)
 - Then click on the "**Copy to Template >>>>**"
-- Hopefully the magic happens
+- Watch the magic happens
