@@ -2,7 +2,7 @@
 title: Tender Unbundled Rate Card Template
 description: Rate card template to convert the offers to Service Agreement
 published: true
-date: 2020-04-01T05:32:23.366Z
+date: 2020-04-03T05:52:24.976Z
 tags: 
 ---
 
@@ -20,3 +20,9 @@ The following are the steps to use the template
 - If the data is fine, open (if not yet) the Service Agreement template (Elec or Gas)
 - Then click on the "**Copy to Template >>>>**"
 - Watch the magic happens
+
+**Additional Note**
+- The Rate Card table's header has the option to change the rate type as per retailer's offer. For instance, the SME offer for Electricity is usually in c/kWh while the Large can be in $/MWh. So, select the rate type according and the conversion will take place automatically.
+- In order to change the rate type on the header, you'll need to "Unprotect" the sheet
+
+
